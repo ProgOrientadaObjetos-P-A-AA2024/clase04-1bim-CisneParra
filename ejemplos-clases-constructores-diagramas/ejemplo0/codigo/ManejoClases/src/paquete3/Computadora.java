@@ -5,32 +5,13 @@
  */
 package paquete3;
 
-import paquete2.*;
-
 public class Computadora {
     private String tipoProcesador;
     private double memoria;
     
   
     
-    public Computadora(double m){
-        memoria = m;
-                
-    }
-    
-    public Computadora(String tipo ){
-        tipoProcesador = tipo;
-                
-    }
-
-    public Computadora(String tipo, double mem ){
-        memoria = mem;
-        tipoProcesador = tipo;
-                
-    }
-    
-    
-    // métodos establecer para cada atributo
+        // métodos establecer para cada atributo
     public void establecerTipoProcesador(String n){
         tipoProcesador = n;
     }

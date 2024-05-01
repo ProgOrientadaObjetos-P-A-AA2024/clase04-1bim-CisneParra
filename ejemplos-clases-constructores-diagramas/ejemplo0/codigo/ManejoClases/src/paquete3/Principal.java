@@ -5,14 +5,16 @@
  */
 package paquete3;
 
-import paquete2.*;
 
 public class Principal {
 
     public static void main(String[] args) {
-        Computadora portatil = new Computadora("Intel- x19", 6.1 + 4.2);
-        System.out.printf("%s - %.2f", portatil.obtenerTipoProcesador(),
-                portatil.obtenerMemoria());
-
+        Computadora computadoraTrabajo = new Computadora();
+        /*
+        En esta clase con el metodo "main" llamada principal se crea un 
+        un objeto de tipo Computadora, en el cual tom un valor por defecto
+        del constructor necesitado.
+        */
+       
     }
 }
