@@ -1,40 +1,25 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package paquete2;
+package paquete3;
 
-import java.util.Scanner;
-
-/**
- *
- * @author reroes
- */
 public class Hospital {
 
     private String nombre;
     private String ciudad;
     private int numeroDoctores;
     private int numeroEnfermeros;
-    Scanner entrada;
 
-    /*
-        Crear un constructor que reciba como parámetros
-        valores que serán asignados a los atributos.
-    
-     */
-    public Hospital(String nom, String ciu, int doc, int en) {
-        nombre = nom;
-        ciudad = ciu;
-        numeroDoctores = doc;
-        numeroEnfermeros = en;
-    }
     public Hospital() {
         nombre = "na";
         ciudad = "ciu";
         numeroDoctores = 100;
         numeroEnfermeros = 400;
+    }
+
+    public Hospital(String n, String ciu, int doctores, int enfermeros) {
+
+        nombre = n;
+        ciudad = ciu;
+        numeroDoctores = doctores;
+        numeroEnfermeros = enfermeros;
     }
 
     public void establecerNombre(String n) {
@@ -71,9 +56,18 @@ public class Hospital {
 
     @Override
     public String toString() {
-        // String cadena = String.format("%s \n", nombre);
-        String cadena = String.format("%s -  %s \n", obtenerNombre()
-                ,obtenerCiudad());
+
+        String cadena = String.format("Nombre: %s\nCiudad: %s"
+                + "\nNumero de Doctores: %d\nNumero de Enfermeros: %d\n",
+                 obtenerNombre(),
+                obtenerCiudad(),
+                obtenerNumeroDoctores(),
+                obtenerNumeroEnfermeros());
+        /*
+        En un String format es posible ultilizar los metodos y sus atributos
+        sin tener en cuenta de que estos sean privados ,publicos o protegidos
+        debido a que esntan dentro de la misma clase
+        */
         return cadena;
     }
 

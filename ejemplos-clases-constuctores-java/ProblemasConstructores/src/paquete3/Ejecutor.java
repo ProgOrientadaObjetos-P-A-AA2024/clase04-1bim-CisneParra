@@ -3,9 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package paquete2;
+package paquete3;
 
-import java.util.Scanner;
 
 /**
  *
@@ -17,16 +16,7 @@ public class Ejecutor {
         /*Crear un objeto y presentar los datos
         Ingresar la información por teclado.
         */
-        Scanner entrada = new Scanner(System.in);
-        System.out.println("Ingrese el nombre del hospital");
-        String nom = entrada.nextLine();
-        System.out.println("Ingrese la ciudad");
-        String ciu = entrada.nextLine();
-        System.out.println("Ingrese el numero de Doctores");
-        int doc = entrada.nextInt();
-        System.out.println("Ingrese el numero de enfermeros");
-        int enf = entrada.nextInt();
-        Hospital h3 = new Hospital(nom,ciu,doc,enf);
+        
         Hospital h1 = new Hospital("Militar", "Loja", 1000, 3000);
         
         h1.establecerNombre("Hospital Militar Privado");
@@ -35,7 +25,6 @@ public class Ejecutor {
         
         System.out.printf("%s\n", h1);
         System.out.printf("%s\n", h2);
-        System.out.printf("%s\n", h3);
         
     }
 }
